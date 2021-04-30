@@ -79,7 +79,6 @@ C:\Users\PC-N\source\repos\projetoStrata\projetoStrata\bin\pt-br\System.Web.Razo
 C:\Users\PC-N\source\repos\projetoStrata\projetoStrata\bin\pt-br\System.Web.WebPages.resources.dll
 C:\Users\PC-N\source\repos\projetoStrata\projetoStrata\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
 C:\Users\PC-N\source\repos\projetoStrata\projetoStrata\bin\pt-br\System.Web.WebPages.Razor.resources.dll
-C:\Users\PC-N\source\repos\projetoStrata\projetoStrata\obj\Debug\projetoStrata.csprojAssemblyReference.cache
 C:\Users\PC-N\source\repos\projetoStrata\projetoStrata\obj\Debug\projetoStrata.csproj.CoreCompileInputs.cache
 C:\Users\PC-N\source\repos\projetoStrata\projetoStrata\obj\Debug\projetoStrata.csproj.CopyComplete
 C:\Users\PC-N\source\repos\projetoStrata\projetoStrata\obj\Debug\projetoStrata.dll

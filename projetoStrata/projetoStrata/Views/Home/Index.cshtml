@@ -6,11 +6,11 @@
 </div>*@
 
 
-<div class="row">
-    <header class="cabeçalho-principal"><!-- Cabeçalho principal /início-->        
-        <h1>Trebalhos e groselhas de Danielt Tapias Morales.</h1>    
+<div class="#">
+    <header class="cabecalho-principal"><!-- Cabeçalho principal /início-->        
+        <h1>Trabalhos e groselhas de Daniel Tapias Morales.</h1>    
         <a class="link-cabecalho" href="html5up.net">
-            <img />
+            <img src="~/images/avatar.jpg"/>
         </a>
     </header><!-- Cabeçalho principal /fim-->
 
@@ -86,25 +86,110 @@
 
             <a>Veja Portfólio completo</a><!-- Trabalhos recentes /fim-->
 
+        </section>
+
             <section class="secao-conteudo-principal"><!-- Contato /início-->
                 <h3>Entrar em contato</h3>
                 <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan</p>
                 
-                <form class="formulario-contato">
+                <form class="formulario-contato" action="#" method="post">
                     <fieldset>
-                        <legend></legend>
+                        @*<legend></legend>*@
 
-                        <label for="nome">Nome
-                        <input id="nome"/></label>
+                        <label for="nome">Nome: <br />
+                            <input id="nome" name="nome" type="text" placeholder="Nome" required autofocus/>
+                        </label>
+
+                        <label for="email">Email:<br />
+                            <input id="email" name="email" type="email" placeholder="example@exemple.com" required/>
+                        </label>
+
+                        <label for="mensagem">Mensagem: <br />
+                            <textarea placeholder="Digite a sua mensagem" id="mensagem" name="mensagem" style="resize: none" maxlength="300"></textarea>
+                        </label>
+
+                        <input type="submit" value="Enviar"/>
 
                     </fieldset>
                 </form>
 
-            </section><!-- COntato /fim-->
+                <address>
+
+                    <p>
+                        <span>Endereço</span>
+                        1234 Somewhere Rd. Nashville, TN 00000 United States
+                    </p>
+
+                    <p>
+                        <span>Telefone</span>
+                        000-000-000
+                    </p>
+
+                    <p>
+                        <span>E-mail</span>
+                        hello@unitled.tld
+                    </p>
+
+                </address>
+
+            </section><!-- Contato /fim-->
+            
+            <section class="secao-conteudo-principal"><!-- Elementos /início-->
+                <h3>Elementos</h3>
+
+                <h4>Texto</h4>
+                <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>
+                this is <sup>superscript</sup> text and this is <sub>subscript</sub> text. This is underline and this is <code>code: for (;;) { ... }</code>
+                Finally, this is a <a href="#">Link</a>
+                </p>
+
+                <blockquote >
+                    <p>Está é uma citação tirada da Mozilla Developer Center.</p>
+                </blockquote>
+
+                <p>According to Mozilla's website</p>
+                <q> Firefox 1.0 was released in 2001 and became a big success.</q>
+
+                <h4>Preformatado</h4>
+                <pre>
+                    <code>
+                        &lt;script&gt;
+                            alert('oi');
+                        &lt;/script&gt;
+                    </code>    
+                </pre>
+
+                <h4>Listas</h4>
+
+                <h5>Não ordenada</h5>
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+
+                <h5>Ordenada</h5>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+                
+                <h5>Alterate</h5>
+                <ul class="ul-alternate">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+
+                <h5>Icones</h5>
+                <ul>
+                    <li><i class="fab fa-twitter"></i></li>
+                </ul>
+
+            </section>
 
 
-
-        </section>
 
 
     </main><!-- Conteúdo principal /fim-->

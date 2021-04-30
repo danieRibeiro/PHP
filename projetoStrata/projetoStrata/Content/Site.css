@@ -22,3 +22,28 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+body{
+    color: #666;
+    line-height: 1.5;
+}
+
+.conteudo-principal{
+    width: 65%;
+    margin-left: 35%;
+    padding: 124px 54px 72px;
+    box-sizing: border-box;
+}
+
+.cabecalho-principal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 35%;
+    background: orange;
+   
+}
+
