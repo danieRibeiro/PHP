@@ -83,3 +83,4 @@ C:\Users\PC-N\source\repos\projetoStrata\projetoStrata\obj\Debug\projetoStrata.c
 C:\Users\PC-N\source\repos\projetoStrata\projetoStrata\obj\Debug\projetoStrata.csproj.CopyComplete
 C:\Users\PC-N\source\repos\projetoStrata\projetoStrata\obj\Debug\projetoStrata.dll
 C:\Users\PC-N\source\repos\projetoStrata\projetoStrata\obj\Debug\projetoStrata.pdb
+C:\Users\PC-N\source\repos\projetoStrata\projetoStrata\obj\Debug\projetoStrata.csprojAssemblyReference.cache

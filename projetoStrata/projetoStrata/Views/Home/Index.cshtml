@@ -7,18 +7,23 @@
 
 
 <div class="#">
-    <header class="cabecalho-principal"><!-- Cabeçalho principal /início-->        
-        <h1>Trabalhos e groselhas de Daniel Tapias Morales.</h1>    
-        <a class="link-cabecalho" href="html5up.net">
-            <img src="~/images/avatar.jpg"/>
+    <header class="cabecalho-principal">
+        <!-- Cabeçalho principal /início-->
+        
+        <a class="link-cabecalho" href="#">
+            <img src="~/images/avatar.jpg" />
         </a>
+        <h1 class="cabecalho-principal-titulo">Trabalhos e groselhas de Daniel Tapias Morales.</h1>
+        <p>Retirado de <a href="https://html5up.net/" class="cabecalho-principal-link">html5up.net</a></p>
+
     </header><!-- Cabeçalho principal /fim-->
 
     <!-- Conteúdo principal /início-->
     <main class="conteudo-principal">
+       
         
         <section class="secao-conteudo-principal">
-            <h2>Quando o header é aside e o aside é no header</h2>
+            <h2 >Quando o header é aside e o aside é no header</h2>
             <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
             
             <a class="" href="" title="Veja mais">Veja mais...</a>
@@ -97,7 +102,7 @@
                         @*<legend></legend>*@
 
                         <label for="nome">Nome: <br />
-                            <input id="nome" name="nome" type="text" placeholder="Nome" required autofocus/>
+                            <input id="nome" name="nome" type="text" placeholder="Nome" required />
                         </label>
 
                         <label for="email">Email:<br />
@@ -134,16 +139,18 @@
 
             </section><!-- Contato /fim-->
             
-            <section class="secao-conteudo-principal"><!-- Elementos /início-->
+            <section class="secao-conteudo-principal">
+                <!-- Elementos /início-->
                 <h3>Elementos</h3>
 
                 <h4>Texto</h4>
-                <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>
-                this is <sup>superscript</sup> text and this is <sub>subscript</sub> text. This is underline and this is <code>code: for (;;) { ... }</code>
-                Finally, this is a <a href="#">Link</a>
+                <p>
+                    This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>
+                    this is <sup>superscript</sup> text and this is <sub>subscript</sub> text. This is underline and this is <code>code: for (;;) { ... }</code>
+                    Finally, this is a <a href="#">Link</a>
                 </p>
 
-                <blockquote >
+                <blockquote>
                     <p>Está é uma citação tirada da Mozilla Developer Center.</p>
                 </blockquote>
 
@@ -152,7 +159,7 @@
 
                 <h4>Preformatado</h4>
                 <pre>
-                    <code>
+                <code>
                         &lt;script&gt;
                             alert('oi');
                         &lt;/script&gt;
@@ -174,7 +181,7 @@
                     <li>Item 2</li>
                     <li>Item 3</li>
                 </ol>
-                
+
                 <h5>Alterate</h5>
                 <ul class="ul-alternate">
                     <li>item 1</li>
@@ -185,7 +192,215 @@
                 <h5>Icones</h5>
                 <ul>
                     <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-facebook-square"></i></li>
                 </ul>
+
+            </section>
+            <section class="secao-conteudo-principal">
+                <h5>Ação</h5>
+                <p>
+                    <a href="#" class="button-default">Default</a>
+                    <a href="#" class="button-default button-default-stroke">Default</a>
+                </p>
+
+                <p>
+                    <a href="#" class="button-default button-default-small">Default</a>
+                    <a href="#" class="button-default button-default-small button-default-stroke">Default</a>
+                </p>
+
+                <p>
+                    <a href="#" class="button-default button-default-full">Default</a>
+                    <a href="#" class="button-default button-default-full button-default-stroke">Default</a>
+                </p>
+
+                <p>
+                    <a href="#" class="button-default button-default-full button-default-small">Default</a>
+                    <a href="#" class="button-default button-default-full button-default-stroke"></a>
+                </p>
+            </section>
+
+            <section class="secao-conteudo-principal">
+                <table class="tabela">
+                    @*<caption></caption>*@
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Descrição</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td>119.96</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>Item one</td>
+                            <td>Ante turpis aliquet porttitor</td>
+                            <td>29.99</td>
+                        </tr>
+                        <tr>
+                            <td>Item two</td>
+                            <td>Ante turpis aliquet porttitor</td>
+                            <td>29.99</td>
+                        </tr>
+                        <tr>
+                            <td>Item three</td>
+                            <td>Ante turpis aliquet porttitor</td>
+                            <td>29.99</td>
+                        </tr>
+                        <tr>
+                            <td>Item four</td>
+                            <td>Ante turpis aliquet porttitor</td>
+                            <td>29.99</td>
+                        
+                        </tr>
+                    </tbody>
+                        
+
+                </table>
+            </section>
+
+            <section class="botoes">
+                <p>
+                    <button class="button-default ">Default</button>
+                    <button class="button-default button-default-stroke">Default</button>
+                </p>
+
+                <p>
+                    <button class="button-default button-default-small ">Default</button>
+                    <button class="button-default button-default-small button-default-stroke">Default</button>
+                </p>
+
+                <p>
+                    <button class="button-default button-default-full ">Default</button>
+                    <button class="button-default button-default-full button-default-stroke">Default</button>
+                </p>
+
+                <p>
+                    <button class="button-default button-default-full button-default-small ">Default</button>
+                    <button class="button-default button-default-full button-default-small button-default-stroke">Default</button>
+                </p>
+
+            </section>
+
+            <section class="secao-conteudo-principal">
+                <h5>Formulário</h5>
+                <form action="/" method="post" class="formulario-enquete">
+                    <label for="nome">
+                        Nome:
+                        <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required />
+                    </label>
+
+                    <label for="email">
+                        Email:
+                        <input type="email" id="email" name="email" placeholder="ex: example@example.com" />
+                    </label>
+
+                    <label for="categorias">
+                        Categoria:
+                        <select id="categorias" name="categorias">
+                            <option value="0">Selecione...</option>
+                            <option value="desenvolvimento-web">Desenvolvimento Web</option>
+                            <option value="desenvolvimento-microservices">Desenvolvimento de MicroServices</option>
+                            <option value="desenvolvimento-sistemas-embarcados">Desenvolvimento de Sistemas Embarcados</option>
+                            <option value="desenvolvimento-desktop">Desenvolvimento Desktop</option>
+                            <option value="desenvolvimento-mobile">Desenvolvimento Mobile</option>
+                        </select>
+                    </label>
+
+                    <label for="lw-p">
+                        <input id="lw-p" type="radio" name="performance" value="lw-p" />
+                        Baixa Prioridade
+                    </label>
+                    <label for="ln-p">
+                        <input id="ln-p" type="radio" name="performance" value="ln-p" />
+                        Prioridade Normal
+                    </label>
+                    <label for="lh-p">
+                        <input id="lh-p" type="radio" name="performance" value="lh-p" checked/>
+                        Alta Prioridade
+                    </label>
+
+                    <label for="enviar-copia">
+                        <input type="checkbox" checked id="enviar-copia"/> Enviar uma cópia desta mensagem por email.
+                    </label>
+
+                    <label for="nao-robo">
+                        <input type="checkbox" checked id="nao-robo"/>
+                        Eu sou um humano e não um robô
+                    </label>
+
+                    <label for="mensagem-formulario-enquete">Mensagem:
+                        <textarea id="mensagem-formulario-enquete" required placeholder="Digite uma mensagem" maxlength="400" style="resize: none;"></textarea>
+                        
+                    </label>
+
+                    <button type="submit" class="button-default-stroke">Enviar Mensagem</button>
+                    <input type="reset" value="Limpar" class="button-default" />
+
+                </form>
+            </section>
+            <section class="secao-conteudo-principal">
+                <h5>Imagens</h5>
+                <div class="galeria-imagens">
+                    <img src="~/images/fulls/01.jpg" alt="Alternate Text" />
+                </div>
+                <div class="galeria-thumb">
+                    <img src="~/images/thumbs/01.jpg" alt="Alternate Text" />
+                    <img src="~/images/thumbs/02.jpg" alt="Alternate Text" />
+                    <img src="~/images/thumbs/03.jpg" alt="Alternate Text" />
+                    <img src="~/images/thumbs/04.jpg" alt="Alternate Text" />
+                    <img src="~/images/thumbs/05.jpg" alt="Alternate Text" />
+                    <img src="~/images/thumbs/06.jpg" alt="Alternate Text" />
+                </div>
+
+                <h4>Esquerda &amp; Direita</h4>
+
+                <p>
+                    <img src="~/images/avatar.jpg" alt="Alternate Text" />Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                </p>
+
+                <p>
+                    <img src="~/images/avatar.jpg" alt="Alternate Text" />Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem
+                </p>
+
 
             </section>
 

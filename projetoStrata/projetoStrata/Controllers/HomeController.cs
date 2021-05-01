@@ -20,7 +20,7 @@ namespace projetoStrata.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Contact('#formulario-contato')
         {
             ViewBag.Message = "Your contact page.";
 
