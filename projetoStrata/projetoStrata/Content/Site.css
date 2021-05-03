@@ -201,12 +201,26 @@ li{
     padding: .75em 1.5em;
     border-radius: 5px;
     font-size: .8em;
+    transition: all .6s;
+    cursor: pointer;
+}
+
+.button-default:hover{
+    background-color: #5ddeb9;
+    border-color: transparent;
 }
 
 .button-default-stroke{
     background-color: white;
     border-color: #efefef;
     color: inherit;
+
+}
+
+.button-default-stroke:hover{
+    color: #49bf9d;
+    border-color: #49bf9d;
+    background: white;
 }
 
 .button-default-small{
@@ -294,7 +308,7 @@ input, textarea, select{
     width:100%;
 }
 
-input[type="submit"]{
+/*input[type="submit"]{
     width: auto;
     padding: 5px 15px;
     box-sizing: border-box;
@@ -312,7 +326,7 @@ input[type="submit"]:hover {
     transition-duration: 0.8s;
     transition-delay: 0.5s;
     transition-timing-function: ease-in-out;
-}
+}*/
 
 /*Formulario enquete*/
 .formulario-enquete #categorias, .formulario-enquete #mensagem-formulario-enquete{
@@ -333,7 +347,7 @@ input[type="submit"]:hover {
 
 .formulario-enquete input[type="reset"]:hover, .formulario-enquete input[type="submit"]:hover {
     border: 1px solid #302f2f;
-    transition: border 0.5s .2s ease-in-out;
+    transition: border 0.5s;
 }
 
 .imagem-link{
@@ -364,4 +378,21 @@ input[type="submit"]:hover {
 .esquerda-direita-direita img{
     float: right;
     padding: 5px;
+}
+
+.acao p{
+    margin-bottom: 5%;
+}
+
+/* Rodapé */
+.rodape-principal {
+    line-height: 0px;
+    margin-top: 20%;
+    text-align: end;
+    padding-right: 19px;
+    box-sizing: border-box;
+}
+
+.rodape-principal .ul-icones i{
+    color: #696565;
 }
