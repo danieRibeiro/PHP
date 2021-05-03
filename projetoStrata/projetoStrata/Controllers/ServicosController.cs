@@ -6,23 +6,17 @@ using System.Web.Mvc;
 
 namespace projetoStrata.Controllers
 {
-    public class HomeController : Controller
+    public class ServicosController : Controller
     {
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Teste()
         {
             return View();
         }
-
-        public ActionResult Contact()
-        {
-            return View();
-        }
-
 
     }
 }

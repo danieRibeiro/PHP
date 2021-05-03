@@ -1,0 +1,127 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*
+    importados
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+    color: #666;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+ /*
+    Cabeçalho
+ */
+.navbar{
+    padding: 8px 5px 8px;
+    width: 65%;
+    margin-left: 35%;
+}
+
+.conteudo-principal {
+    width: 65%;
+    margin-left: 35%;
+    padding: 124px 54px 72px;
+    box-sizing: border-box;
+}
+
+.cabecalho-principal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 8%;
+    height: 100%;
+    width: 35%;
+    box-sizing: border-box;
+    background: url(../images/overlay.png), url(../images/bg.jpg);
+    background-position: left top;
+    background-size: auto, cover;
+   
+}
+
+.cabecalho-principal-titulo{
+    font-size: 22px;
+    line-height: 1.5;
+    color: white;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.cabecalho-principal-titulo strong{
+    color: white;
+}
+
+.cabecalho-principal-link{
+    color: rgba(29, 137, 34, 0.89);
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+.cabecalho-principal-link:hover{
+    border-bottom-color: transparent;
+    transition-property: border;
+    transition-duration: .8s;
+    transition-timing-function: linear;
+
+}
+
+sub, sup{
+    font-size: 12px;
+}
+
+blockquote{
+    border-left: 5px solid #efefef;
+    margin: 2em 0; 
+    padding: .5em 0 .5em 1.5em;
+
+}
+
+code{
+    background: #f7f7f7;
+    border-radius: .35em;
+    border: 2px solid #efefef;
+    font-size: .9em;
+    padding: 0.25em .65em;
+    font-family: 'Courier New', sans-serif;
+}
+
+pre code{
+    display: block;
+}
+
+
+ul {
+    list-style: none;
+    li
+
+{
+    display: inline;
+}
+}a{
+       display:compact;
+ }
