@@ -1,0 +1,190 @@
+body{
+    margin: 1%;
+}
+
+/* Importados */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* Títulos */
+
+h1, h2, h3, h4, h5{
+    font-family: "Reboto", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Cabeçalho */
+
+.cabecalho-principal a{
+    display: block;
+    text-align: center;
+}
+
+.navegacao-links{
+    background:#612674;
+}
+
+.navegacao-links ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    
+    padding: 10px 0px;
+}
+
+.navegacao-links ul li{
+    line-height: 1.3em;
+}
+
+.navegacao-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: .9em;
+    letter-spacing: .4px;
+}
+
+.navegacao-links li a:hover{
+    background: #774d85;
+}
+
+/* Conteúdo */
+
+.secao-conteudo{
+    text-align: center;
+    background: rgb(228, 225, 225);
+}
+
+.secao-conteudo-artigo{
+    padding-top: 20px;
+}
+
+.secao-conteudo-artigo h3{
+    text-transform: uppercase;
+}
+
+.secao-conteudo-titulo{
+    font-size: 1.4em;
+}
+
+.secao-conteudo-artigo .secao-conteudo-subtitulo{
+    padding: 6px;
+    font-size: .9em;
+    color: rgb(44, 44, 44);
+}
+
+.secao-conteudo-artigo p{
+    
+    color: rgb(44, 44, 44);
+}
+
+
+/* Botão */
+.secao-conteudo-artigo a span{
+    position: relative;
+    padding: 5px 15px;
+
+    color: #6c2581;
+    transition: color .9s ease-in-out .2s;
+
+    box-sizing: border-box;
+    
+    overflow: hidden;
+
+    z-index: 1;
+
+    border: 1px solid #bbbabb;
+    border-radius: 5px;
+
+
+
+}
+
+span[class^="icon"]{
+    font-size: 2.6em;
+    color: rgb(131 63 124);
+
+}
+
+
+
+/* Rodapé */
+
+.rodape{
+    padding-top: 20px;
+    text-align: center;    
+    background: rgb(228, 225, 225);
+    box-sizing: border-box;
+
+}
+
+.ul-rodape{
+    
+    border-top: 1px solid rgb(189, 186, 186);
+    list-style: none;
+    padding: 0;
+    
+    text-align: center;
+}
+
+.ul-rodape .lista-rodape{
+    display: inline-block;
+    font-size: .9em;
+    margin-right: .5em;
+    
+    margin-top: .8em;
+}
+
+.ul-rodape .lista-rodape a i{
+    
+    color: rgb(44, 44, 44);
+}
+
+ul.ul-rodape .lista-rodape a p{
+    display: none;
+}
+
+
+
+
+/* Animaçao */
+
+.botao:before{
+    content: "";
+    width: 0%;
+    height: 0%;
+    
+    
+    overflow: hidden;
+
+    background: rgb(121, 79, 161);
+    
+
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    z-index: -1;
+
+    transform: translate(-50%, -50%);
+    
+    transition-property: width, height;
+    transition-duration: .4s, .6s;
+    transition-delay: .2s, .4s;
+    transition-timing-function: ease-in-out;
+}
+
+.botao:hover:before{
+    width: 101%;
+    height: 102%;
+    background: rgb(112, 61, 160);
+    
+}
+
+
+.botao:hover{
+    color: white;
+    transition: color 2s ease-in-out .3s;
+}
