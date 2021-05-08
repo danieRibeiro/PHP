@@ -41,6 +41,7 @@ a{
 }
 
 .navegacao-links ul li{
+    font-size: 1.5em;
     line-height: 1.3em;
 }
 
@@ -65,6 +66,16 @@ a{
 
 article{
     margin: 20px 0px;
+}
+
+.icone-play{
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.icone-play img{
+    height: 5em;
+    display: none;
 }
 
 .secao-conteudo-artigo{
@@ -249,6 +260,19 @@ ul.ul-rodape .lista-rodape a p{
     }
 
     /* Conteúdo*/
+
+    .conteudo-topo .secao-conteudo-titulo{
+        margin-bottom: 0px;
+    }
+
+    .conteudo-topo .secao-conteudo-subtitulo{
+        margin-top: 0px;
+    }
+
+    .icone-play img{
+        display: inline;
+    }
+
     .principal, .principal .secao-conteudo-titulo, .principal .secao-conteudo-subtitulo{
         background: #9135af;
         color: white;
@@ -299,9 +323,16 @@ ul.ul-rodape .lista-rodape a p{
 }
 
 @media(min-width: 62em){
+
+    .navegacao-links{
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+
     .principal{
-        background-image: url("../curso-web/images/bg_topo_1198x670.jpg");
-        height: 28.875em;
+        background-image: url("images/bg_topo_1198x670.jpg");
+        background-position: center top;
+        height: 29.875em;
         position: relative;
     }
 
@@ -312,8 +343,39 @@ ul.ul-rodape .lista-rodape a p{
 
     .conteudo-topo {
         position: absolute;
-        top: 63%;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%, -12%);
+        transform: translate(-50%, -30%);
+        font-size: 1.2em;
+    }
+
+    .secao-conteudo-artigo p{
+        font-size: 1.4em;
     }
 }
+
+@media(min-width: 75em){
+    .principal{
+        background: url("images/bg_topo_1600x1374.jpg") top center;  
+        background-size: cover; 
+        height: 44em; 
+        position: relative; 
+    }
+
+    .col-4{
+        width: 23%;
+        float: left;
+        margin: 1%;
+    }
+
+    .conteudo-topo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 10%);
+    }
+    .secao-conteudo-artigo h3, .secao-conteudo-artigo p{
+        font-size: 1.3em;
+    }
+}
+
