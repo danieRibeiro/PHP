@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .botao{
+            position: relative;
+            z-index: 1;
+            width: 50%;
+            
+        }
+
+        .botao:before{
+            content: "";
+            position: absolute;
+            width: 0%;
+            top: 0%;
+            left: 0%;
+            height: 100%;
+            z-index: -1;
+            
+            transition: all .5s linear ;
+        }
+
+        .botao:hover:before{
+            width: 100%;
+            background: #ff00ff;
+            color: white;
+            font-size: 1.3em;
+
+            transition: all .5s linear ;
+        }
+
+
+        .esconde{
+            position: relative;
+            background: yellow;
+            
+            animation-name: esconde ;
+            animation-duration: 5s;
+            animation-direction: alternate-reverse;
+            transition: all 5s;
+        }
+
+        .esconde:before{
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+        @keyframes esconde{
+            0%{
+
+                background: white;
+            }
+            100%{
+                background: white;
+                color: white;
+            }
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div id="anima-time">
+        <button class="botao">1</button>
+        <button class="botao">2</button>
+        <button class="botao">3</button>
+    </div>
+
+    <div class="esconde">Escondendo</div>
+
+</body>
+</html>
