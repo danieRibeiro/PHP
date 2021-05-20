@@ -214,6 +214,46 @@
             }
         }
 
+        /* Cartão com foco */
+
+        .anima-container{
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: nowrap;
+                margin: 0 auto;
+            }
+
+            .anima-container .anima-box{
+                background: #ccc;
+                margin: 1%;
+                border-radius: 20px;
+                transition: .3s;
+            }
+
+            .anima-container .anima-box .anima-card{
+                box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.6),
+                            5px 5px 15px rgba(0, 0, 0, 0.4),
+                            inset 5px 5px 15px rgba(0, 0, 0, 0.6),
+                            5px 5px 15px rgba(0, 0, 0, 0.4);
+                            
+                padding: 25px;
+                margin: 2%;
+                border-radius: 20px;
+            }
+
+            .anima-container:hover .anima-box{
+                filter: blur(8px);
+                transition: .4s;
+            }
+
+            .anima-container .anima-box:hover{
+                filter:blur(0px);
+                transition: .4s;
+                transform: scale(1.1);
+            }  
+
     </style>
 
 
@@ -227,7 +267,7 @@
     </div>
 
     <nav>
-        <h5>Animação (centralizada)</label>
+        <h5>Animação borda(centralizada)</label>
         <ul>
             
             <li>
@@ -241,7 +281,7 @@
             </li>
         </ul>
 
-        <h5>Animação (left)</label>
+        <h5>Animação borda(left)</label>
 
         <ul>
             <li>
@@ -254,8 +294,8 @@
             <a href="#" class="anima-nav-lt">Notícias</a>
             </li>
         </ul>
-        <h5>navegação (rotacionando) </h5>
 
+        <h5>navegação (rotacionando) </h5>
         <ul>
             <li>
             <a href="#" class="">Home</a>
@@ -284,10 +324,41 @@
     <br>
     <br>
     <br>
-    <div class="anima-alerta">Escondendo</div>
+    <div class="anima-alerta">Promoção</div>
 
+    <h3>Preenchendo fundo</h3>
     <div >
         <p class="anima-preenche-fundo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolore a rem qui accusantium, veritatis incidunt, laboriosam, sunt quas veniam eum autem aperiam eveniet</p>
+    </div>
+
+    <h3>Card desfocado</h1>
+    <div class="anima-container">
+        <div class="anima-box">
+            <div class="anima-card">
+                <div class="anima-conteudo-card">
+                    <h3>
+                        Lorem Ipsum
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dignissimos id aliquid vero eius officia sapiente, ullam molestias ratione perspiciatis, sed reiciendis! Et molestias eveniet itaque, libero sint id consequatur!</p>
+                </div>
+            </div>
+        </div>
+        <div class="anima-box">
+            <div class="anima-card">
+                <div class="anima-conteudo-card">
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam fugit soluta unde placeat alias, maiores doloribus rem ducimus nihil esse distinctio dignissimos voluptas eaque facilis possimus consequatur perferendis non nostrum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="anima-box">
+            <div class="anima-card">
+                <div class="anima-conteudo-card">
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nulla beatae nostrum assumenda facilis iure, eligendi necessitatibus soluta nihil laborum quo dolore omnis aspernatur temporibus totam culpa pariatur velit tenetur?</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
