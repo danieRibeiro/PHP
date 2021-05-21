@@ -5,25 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="style.css">
-        
-
-        <style>
-            input#bt-menu{
-                display: none;
-            }
-
-
-            .menu{
-                display: none;
-            }
-
-            #bt-menu:checked ~ .menu{
-                margin-top: 20px;
-                display: block;
-            }
-        
-        </style>
-
+       
 
     </head>
     <body>
@@ -162,6 +144,13 @@
                     </div>
                 </section>
                 
+                <div class="popup">
+                    <div class="pop-content">
+                        <h3>Lorem ipsum dolor</h3>
+                        <button id="close">X</button>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti distinctio officiis eligendi numquam sit vitae? Dicta, eius culpa tenetur veritatis quis, eaque hic reprehenderit voluptatibus nam nisi delectus animi?</p>
+                    </div>
+                </div>
 
 
 
@@ -180,12 +169,7 @@
         <script defer>
             (function(){
                 'use strict';
-                
-                
-            
-            })();
-
-            let botao = document.getElementsByClassName('botao')
+                let botao = document.getElementsByClassName('botao')
                 
 
                 for(let c = 0; c <= botao.length; c++){
@@ -195,7 +179,21 @@
                 function clicou(){
                     window.alert(`Botão clicado em ${this.textContent}`)
                     console.log("botão clicado.")
+                    document.querySelector(".popup").style.display = "block"
+                    let fechar = document.querySelector('#close').addEventListener('click', function(){
+                    document.querySelector(".popup").style.display = "none"
+                })
                 }
+
+                
+
+
+
+                
+            
+            })();
+
+            
             
                 
                 

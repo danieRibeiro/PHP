@@ -25,11 +25,26 @@ label[for="bt-menu"]{
     margin-right: 20px;
 }
 #principal{
-    
+    position: relative;
     padding-top: 19%;
 }
 a{
     text-decoration: none;
+}
+
+.menu{
+    visibility: hidden;
+}
+
+input#bt-menu{
+    display: none;
+}
+
+
+
+
+#bt-menu:checked ~ .menu{
+    margin-top: 20px;visibility: visible;
 }
 
 img{
@@ -96,7 +111,7 @@ div#principal{
     }
 
     .menu{
-        display: block;
+        visibility: visible;
     }
 
     #bt-menu:checked ~ .menu{
@@ -172,4 +187,39 @@ div#principal{
     }
    
 
+}
+
+.popup{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 90vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+
+.pop-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: #fff;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.popup #close{
+    text-align: center;
+    background: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    left: -15px;
 }
