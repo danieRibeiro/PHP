@@ -11,9 +11,23 @@ h1, h2, h3, h4, h5, h6, p{
 nav{
     background: #d2d2d2;
     text-align: center;
-    margin-bottom: 1%;
+    overflow: auto;
+    width: 100%;
+    position: fixed;
 }
 
+nav div:first-child{
+    float: left;
+}
+
+label[for="bt-menu"]{
+    float: right;
+    margin-right: 20px;
+}
+#principal{
+    
+    padding-top: 15%;
+}
 a{
     text-decoration: none;
 }
@@ -32,6 +46,9 @@ div#principal{
     margin:  auto;
 }
 
+#principal section:nth-child(5){
+    display: none;
+}
 
 
 
@@ -58,7 +75,7 @@ div#principal{
         width: 48%;
         margin: 1%;
     }
-    div#principal section:nth-child(2) .col-md-2:after{
+    .col-md-2:after{
         content: "";
         display: block;
         clear: both;
@@ -72,6 +89,14 @@ div#principal{
         justify-content: space-between;
         align-items: center;
         padding: 20px;
+    }
+
+    label[for="bt-menu"]{
+        display: none;
+    }
+
+    .menu{
+        display: block;
     }
 
     div#principal section:first-child{
@@ -122,4 +147,24 @@ div#principal{
    #principal section:nth-child(4) div{
     margin: 1%;
    }
+
+   #principal section:nth-child(6){
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: 4;
+       grid-gap: 15px;
+    }
+    
+    #principal section:nth-child(6) div:nth-child(1){
+        text-align: center;
+        grid-column: 1/1;
+        grid-row: 1/6;
+    }
+
+    #principal section:nth-child(6) div:nth-child(2){
+        grid-column: 2/2;
+        grid-row: 3/6;
+    }
+   
+
 }
