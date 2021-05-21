@@ -26,7 +26,7 @@ label[for="bt-menu"]{
 }
 #principal{
     
-    padding-top: 15%;
+    padding-top: 19%;
 }
 a{
     text-decoration: none;
@@ -96,6 +96,11 @@ div#principal{
     }
 
     .menu{
+        display: block;
+    }
+
+    #bt-menu:checked ~ .menu{
+        margin-top: 20px;
         display: block;
     }
 
