@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Card hover</title>
+
+        <style>
+
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background: linear-gradient(55deg, rgba(129, 129, 35, 0.795), rgba(192, 87, 87, 0.795), rgba(55, 55, 197, 0.445), pink);
+                background-size: 300%, 300%, 300%, 300%;
+                animation: anima 15s infinite;
+            }
+
+            div{
+                border: none;
+                width: 300px;
+                height: 300px;
+                padding: 30px;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                background: rgba(255, 255, 255, 0.2);
+                box-shadow: 5px 5px 25px white,
+                -5px -5px 25px white;
+                
+                cursor: pointer;
+            }
+
+            .anima-borda:before, .anima-borda:after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                transition: .7s ease-in-out;
+            }
+
+            .anima-borda:before{
+                border-left: 5px solid rgba(98, 0, 128, 0.5);
+                border-right: 5px solid rgba(98, 0, 128, .5);
+                transform: scaleY(0);
+            }
+
+            .anima-borda:after{
+                border-top: 5px solid rgba(98, 0, 128, .5);
+                border-bottom: 5px solid rgba(98, 0, 128, .5);
+                transform: scaleX(0);
+            }
+
+            .anima-borda:hover:before, .anima-borda:hover:after{
+                transform: scale(1);
+            }
+
+
+            @keyframes anima{
+                0%{
+                    background-position: 0% 50%;
+                    
+                }
+                50%{
+                    background-position: 100% 50%;
+                }
+                100%{
+                    background-position: 0% 50%;
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="anima-borda">
+            <h1>Cartão</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laborum asperiores, repudiandae quae qui, facere quaerat, architecto impedit magni perspiciatis molestias? Dicta quia vero dolorum quisquam perspiciatis corrupti tempora pariatur.</p>
+        </div>
+    </body>
+</html>
