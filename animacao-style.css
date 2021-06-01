@@ -373,7 +373,7 @@ li:hover .anima-nav-rt:after{
 
     /* Voltar ao topo */
     
-    if ($('#scroll-to-top').length) {
+    /* if ($('#scroll-to-top').length) {
         var scrollTrigger = 100, // px
             backToTop = function () {
                 var scrollTop = $(window).scrollTop();
@@ -393,4 +393,39 @@ li:hover .anima-nav-rt:after{
                 scrollTop: 0
             }, 700);
         });
-    }
+    } */
+
+    /* Tooltip oculto */
+    .anima-tooltip-oculto{
+        position: relative; 
+        text-align: center;
+        transition: .7s ease-in-out;
+     }
+
+     .anima-tooltip-oculto p ~ p{
+         position: absolute;
+         visibility: hidden;
+         left: 50%;
+         transform: translate(-50%, 10%);
+         background: rgba(0, 0, 0);
+         color: white;
+         padding: 4px;
+         white-space: nowrap;
+         transition: .7s ease-in-out;
+         border-radius: 5px;
+     }
+
+     .anima-tooltip-oculto p ~ p:after {
+     content: "";
+     position: absolute;
+     top: -33%;
+     left: 50%;
+     margin-left: -5px;
+     border-width: 5px;
+     border-style: solid;
+     border-color: transparent transparent black transparent;
+     }
+
+     .anima-tooltip-oculto:hover p ~ p{
+         visibility: visible;
+     }
