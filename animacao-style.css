@@ -429,3 +429,35 @@ li:hover .anima-nav-rt:after{
      .anima-tooltip-oculto:hover p ~ p{
          visibility: visible;
      }
+
+
+     /*Digitação oculta*/
+     .line{
+        color: white;
+        font-size: 3em;
+    }
+
+    .line:after{
+        content: '';
+        margin-left: 18px;
+        border-right: 1px solid white;
+        animation: pisca-borda 500ms infinite normal;
+    }
+
+    @keyframes pisca-borda{
+        from{
+            border-right-color: rgba(255, 255, 255, 0.8);
+        }
+        to{
+            border-right-color: transparent;
+        }
+    }
+
+    @keyframes caixa-oculta{
+        from{
+            width: 0;
+        }
+        to{
+            width: 18em;
+        }
+    }
