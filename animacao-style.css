@@ -431,7 +431,7 @@ li:hover .anima-nav-rt:after{
      }
 
 
-     /*Digitação oculta*/
+    /*Digitando na tela*/
      .line{
         color: white;
         font-size: 3em;
@@ -459,5 +459,41 @@ li:hover .anima-nav-rt:after{
         }
         to{
             width: 18em;
+        }
+    }
+
+    /* Digitando na tela - 2 */
+    .anima-linha{
+        color: white;
+        font-size: 3em;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-left: 0 auto;
+        border-right: 1px solid white;
+        text-align: center;
+    }
+
+
+    .anima-escreve{
+        animation:  anima-pisca-ponteiro 500ms 1s infinite normal steps(60), anima-caixa-escreve 4s normal steps(60) both;
+       
+
+    }
+
+    @keyframes anima-pisca-ponteiro{
+        from{
+            border-right-color: rgba(255, 255, 255, 0.8);
+        }
+        to{
+            border-right-color: transparent;
+        }
+    }
+
+    @keyframes anima-caixa-escreve{
+        from{
+            width: 0;
+        }
+        to{
+            width: 12em;
         }
     }
