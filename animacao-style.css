@@ -497,3 +497,34 @@ li:hover .anima-nav-rt:after{
             width: 12em;
         }
     }
+
+/* Slider - CSS*/
+.anima-slide-imagem{
+                max-width: 100% !important;
+            }
+            .anima-slide-galeria{
+                display: flex;
+                animation-name: slide;
+                animation-delay: 10s;
+                animation-duration: 105s;
+                animation-iteration-count: infinite;
+                transition: all 30s;
+            }
+
+            @keyframes slide{
+                0%, 24%{
+                    transform: translateX(0);
+                }
+                25%, 49%{
+                    transform: translateX(-100%);
+                }
+                50%, 74%{
+                    transform: translateX(-200%);
+                }
+                75%, 99%{
+                    transform: translateX(-300%);
+                }
+                100%{
+                    transform: translateX(0);
+                }
+            }
