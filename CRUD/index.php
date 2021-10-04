@@ -47,6 +47,22 @@
                 <?php
                   }
                   ?>
+                <?php
+                  if($_SESSION["autenticado"] != "SIM"){
+                ?>
+                <div>
+                  <p class="text-danger ml-1">Você precisa estar logado para acessar as páginas</p>
+                </div>
+                <?php
+                  }
+                ?>
+                <?php
+                  if(isset($_GET["login"]) && $_GET["login"] == 'logoff'){
+                ?>
+                <div>
+                  <p class="text-success">Deslogado com sucesso</p>
+                </div>
+                <?php } ;?>
                 <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
               </form>
             </div>

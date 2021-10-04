@@ -3,7 +3,7 @@
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
-      <a href="loggof.php">
-
+      <a href="logoff.php">
+        Sair
       </a>
     </nav>
