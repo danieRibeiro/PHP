@@ -1,3 +1,6 @@
+<?php
+  require_once('valida_sessao.php');
+?>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -15,13 +18,7 @@
   </head>
 
   <body>
-
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
-        <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        App Help Desk
-      </a>
-    </nav>
+  <?php require_once('menu.php');?>
 
     <div class="container">    
       <div class="row">
