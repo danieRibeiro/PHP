@@ -1,7 +1,6 @@
 <?php
     session_start();
-    print_r($_SESSION);
-    if(!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] == "NÃO"){
-        header('location: index.php');
+    if(!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != "SIM"){
+        header('location: index.php?login=private');
     }
 ?>

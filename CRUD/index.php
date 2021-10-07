@@ -1,6 +1,3 @@
-<?php
-  require_once('valida_sessao.php');
-?>
 
 <html>
   <head>
@@ -20,7 +17,7 @@
 
   <body>
 
-    <?php require_once('menu.php');?>
+    <?php require_once('menu-home.php');?>
 
     <div class="container">    
       <div class="row">
@@ -42,19 +39,19 @@
                   if(isset($_GET["login"]) && $_GET["login"] == 'erro'){
                 ?>
                 <div>
-                  <p class="text-danger ml-1">Usuário ou senha inválido</p>
+                  <p class="text-danger ml-1">Usuário ou senha inválida</p>
                 </div>
                 <?php
-                  }
+                  };
                   ?>
                 <?php
-                  if($_SESSION["autenticado"] != "SIM"){
+                  if(isset($_GET["login"]) && $_GET['login'] == "private"){
                 ?>
                 <div>
                   <p class="text-danger ml-1">Você precisa estar logado para acessar as páginas</p>
                 </div>
                 <?php
-                  }
+                  };
                 ?>
                 <?php
                   if(isset($_GET["login"]) && $_GET["login"] == 'logoff'){
@@ -62,7 +59,7 @@
                 <div>
                   <p class="text-success">Deslogado com sucesso</p>
                 </div>
-                <?php } ;?>
+                <?php }; ?>
                 <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
               </form>
             </div>

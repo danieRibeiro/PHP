@@ -18,7 +18,7 @@
   </head>
 
   <body>
-  <?php require_once('menu.php');?>
+    <?php require_once('menu.php');?>
 
     <div class="container">    
       <div class="row">
