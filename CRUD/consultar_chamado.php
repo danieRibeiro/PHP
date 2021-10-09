@@ -33,6 +33,8 @@
 
     <div class="container">    
       <div class="row">
+      <!-- Título de -->
+      <?php include_once('titulo_perfil.php');?>
 
         <div class="card-consultar-chamado">
           <div class="card">
@@ -44,20 +46,25 @@
               
             <?php foreach($resultado as $chamados){
               $unico = explode('#', $chamados);
-              if(count($unico) < 3){
+              
+              if($_SESSION['tipo_perfil'] == 2){
+                if($_SESSION['id'] != $unico[0]){
+                  continue;
+                }
+              }
+              if(count($unico) <= 1){
                 continue;
               }
             ?>
                 
                 <div class="card mb-3 bg-light">
                   <div class="card-body">
-                    <h5 class="card-title"><?= $unico[0]?></h5>
-                    <h6 class="card-subtitle mb-2 text-muted"><?= $unico[1]?></h6>
-                    <p class="card-text"><?= $unico[2]?></p>
+                    <h5 class="card-title">Serviço: <?= $unico[1]?></h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Categoria: <?= $unico[2]?></h6>
+                    <p class="card-text">Descrição: <?= $unico[3]?></p>
 
                   </div>
                 </div>
-
             <?php }; ?>
 
               <div class="row mt-5">

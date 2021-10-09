@@ -57,7 +57,7 @@
                   if(isset($_GET["login"]) && $_GET["login"] == 'logoff'){
                 ?>
                 <div>
-                  <p class="text-success">Deslogado com sucesso</p>
+                  <p class="text-success">Deslogado</p>
                 </div>
                 <?php }; ?>
                 <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>

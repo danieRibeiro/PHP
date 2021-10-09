@@ -22,7 +22,7 @@
 
     <div class="container">    
       <div class="row">
-
+        <?php include_once('titulo_perfil.php');?>
         <div class="card-abrir-chamado">
           <div class="card">
             <div class="card-header">

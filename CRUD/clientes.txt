@@ -1,3 +1,3 @@
-Manutenção#Rede#Rede caiu
-La casa#Hardware#FAz
-asd#Impressora#asd
+2#Manutenção#Software#Defina a estrutura
+2#Realizar um cadastro#Rede#Fazer um cadastro na rede para a cliente X
+3#Manutenção#Hardware#Trocar o HD
