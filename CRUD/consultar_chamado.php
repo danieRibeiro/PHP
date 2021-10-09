@@ -1,5 +1,15 @@
 <?php
   require_once('valida_sessao.php');
+
+  $abrir = fopen('clientes.txt', 'r');
+  $resultado = [];
+  
+  while(!feof($abrir)){
+    $chamado = fgets($abrir);
+    $resultado[] = $chamado;
+  }
+
+  fclose($abrir);
 ?>
 <html>
   <head>
@@ -32,27 +42,27 @@
             
             <div class="card-body">
               
-              <div class="card mb-3 bg-light">
-                <div class="card-body">
-                  <h5 class="card-title">Título do chamado...</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Categoria</h6>
-                  <p class="card-text">Descrição do chamado...</p>
+            <?php foreach($resultado as $chamados){
+              $unico = explode('#', $chamados);
+              if(count($unico) < 3){
+                continue;
+              }
+            ?>
+                
+                <div class="card mb-3 bg-light">
+                  <div class="card-body">
+                    <h5 class="card-title"><?= $unico[0]?></h5>
+                    <h6 class="card-subtitle mb-2 text-muted"><?= $unico[1]?></h6>
+                    <p class="card-text"><?= $unico[2]?></p>
 
+                  </div>
                 </div>
-              </div>
 
-              <div class="card mb-3 bg-light">
-                <div class="card-body">
-                  <h5 class="card-title">Título do chamado...</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Categoria</h6>
-                  <p class="card-text">Descrição do chamado...</p>
-
-                </div>
-              </div>
+            <?php }; ?>
 
               <div class="row mt-5">
                 <div class="col-6">
-                  <button class="btn btn-lg btn-warning btn-block" type="submit">Voltar</button>
+                  <button class="btn btn-lg btn-warning btn-block" type="button" onclick="history.back();">Voltar</button>
                 </div>
               </div>
             </div>
